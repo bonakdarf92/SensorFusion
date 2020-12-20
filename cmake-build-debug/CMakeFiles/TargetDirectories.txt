@@ -4,3 +4,6 @@
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/SFND_Lidar_Obstacle_Detection/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/SFND_Lidar_Obstacle_Detection/CMakeFiles/environment.dir
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/SFND_Lidar_Obstacle_Detection/CMakeFiles/edit_cache.dir
+/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir
+/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/edit_cache.dir

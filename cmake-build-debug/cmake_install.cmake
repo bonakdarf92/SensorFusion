@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/SFND_Lidar_Obstacle_Detection/cmake_install.cmake")
+  include("/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/SFND_Lidar_Obstacle_Detection/src/quiz/ransac/cmake_install.cmake")
 
 endif()
 

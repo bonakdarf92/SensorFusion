@@ -136,6 +136,19 @@ environment/fast:
 	$(MAKE) -f SFND_Lidar_Obstacle_Detection/CMakeFiles/environment.dir/build.make SFND_Lidar_Obstacle_Detection/CMakeFiles/environment.dir/build
 .PHONY : environment/fast
 
+#=============================================================================
+# Target rules for targets named quizRansac
+
+# Build rule for target.
+quizRansac: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quizRansac
+.PHONY : quizRansac
+
+# fast build rule for target.
+quizRansac/fast:
+	$(MAKE) -f SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/build
+.PHONY : quizRansac/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -173,6 +186,7 @@ help:
 	@echo "... SensorFusion"
 	@echo "... edit_cache"
 	@echo "... environment"
+	@echo "... quizRansac"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -152,6 +152,61 @@ clean: SFND_Lidar_Obstacle_Detection/CMakeFiles/environment.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory SFND_Lidar_Obstacle_Detection/src/quiz/ransac
+
+# Convenience name for "all" pass in the directory.
+SFND_Lidar_Obstacle_Detection/src/quiz/ransac/all: SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/all
+
+.PHONY : SFND_Lidar_Obstacle_Detection/src/quiz/ransac/all
+
+# Convenience name for "clean" pass in the directory.
+SFND_Lidar_Obstacle_Detection/src/quiz/ransac/clean: SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/clean
+
+.PHONY : SFND_Lidar_Obstacle_Detection/src/quiz/ransac/clean
+
+# Convenience name for "preinstall" pass in the directory.
+SFND_Lidar_Obstacle_Detection/src/quiz/ransac/preinstall:
+
+.PHONY : SFND_Lidar_Obstacle_Detection/src/quiz/ransac/preinstall
+
+#=============================================================================
+# Target rules for target SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir
+
+# All Build rule for target.
+SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/all:
+	$(MAKE) -f SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/depend
+	$(MAKE) -f SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles --progress-num=7,8,9 "Built target quizRansac"
+.PHONY : SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/all
+
+# Include target in all.
+all: SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles 0
+.PHONY : SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/rule
+
+# Convenience name for target.
+quizRansac: SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/rule
+
+.PHONY : quizRansac
+
+# clean rule for target.
+SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/clean:
+	$(MAKE) -f SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/clean
+.PHONY : SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/clean
+
+# clean rule for target.
+clean: SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.
