@@ -8,8 +8,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../SFND_Lidar_Obstacle_Detection/CMakeLists.txt"
-  "../SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeLists.txt"
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
@@ -248,13 +246,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "SFND_Lidar_Obstacle_Detection/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/SensorFusion.dir/DependInfo.cmake"
-  "SFND_Lidar_Obstacle_Detection/CMakeFiles/environment.dir/DependInfo.cmake"
-  "SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/DependInfo.cmake"
+  "CMakeFiles/environment.dir/DependInfo.cmake"
   )

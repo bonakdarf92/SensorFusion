@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SensorFusion
-
-# Build rule for target.
-SensorFusion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SensorFusion
-.PHONY : SensorFusion
-
-# fast build rule for target.
-SensorFusion/fast:
-	$(MAKE) -f CMakeFiles/SensorFusion.dir/build.make CMakeFiles/SensorFusion.dir/build
-.PHONY : SensorFusion/fast
-
-#=============================================================================
 # Target rules for targets named environment
 
 # Build rule for target.
@@ -133,48 +120,89 @@ environment: cmake_check_build_system
 
 # fast build rule for target.
 environment/fast:
-	$(MAKE) -f SFND_Lidar_Obstacle_Detection/CMakeFiles/environment.dir/build.make SFND_Lidar_Obstacle_Detection/CMakeFiles/environment.dir/build
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/build
 .PHONY : environment/fast
 
-#=============================================================================
-# Target rules for targets named quizRansac
+src/environment.o: src/environment.cpp.o
 
-# Build rule for target.
-quizRansac: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 quizRansac
-.PHONY : quizRansac
-
-# fast build rule for target.
-quizRansac/fast:
-	$(MAKE) -f SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make SFND_Lidar_Obstacle_Detection/src/quiz/ransac/CMakeFiles/quizRansac.dir/build
-.PHONY : quizRansac/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : src/environment.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/SensorFusion.dir/build.make CMakeFiles/SensorFusion.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/environment.cpp.o:
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/environment.cpp.o
+.PHONY : src/environment.cpp.o
 
-main.i: main.cpp.i
+src/environment.i: src/environment.cpp.i
 
-.PHONY : main.i
+.PHONY : src/environment.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/SensorFusion.dir/build.make CMakeFiles/SensorFusion.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/environment.cpp.i:
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/environment.cpp.i
+.PHONY : src/environment.cpp.i
 
-main.s: main.cpp.s
+src/environment.s: src/environment.cpp.s
 
-.PHONY : main.s
+.PHONY : src/environment.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/SensorFusion.dir/build.make CMakeFiles/SensorFusion.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/environment.cpp.s:
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/environment.cpp.s
+.PHONY : src/environment.cpp.s
+
+src/processPointClouds.o: src/processPointClouds.cpp.o
+
+.PHONY : src/processPointClouds.o
+
+# target to build an object file
+src/processPointClouds.cpp.o:
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.o
+.PHONY : src/processPointClouds.cpp.o
+
+src/processPointClouds.i: src/processPointClouds.cpp.i
+
+.PHONY : src/processPointClouds.i
+
+# target to preprocess a source file
+src/processPointClouds.cpp.i:
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.i
+.PHONY : src/processPointClouds.cpp.i
+
+src/processPointClouds.s: src/processPointClouds.cpp.s
+
+.PHONY : src/processPointClouds.s
+
+# target to generate assembly for a file
+src/processPointClouds.cpp.s:
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.s
+.PHONY : src/processPointClouds.cpp.s
+
+src/render/render.o: src/render/render.cpp.o
+
+.PHONY : src/render/render.o
+
+# target to build an object file
+src/render/render.cpp.o:
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/render/render.cpp.o
+.PHONY : src/render/render.cpp.o
+
+src/render/render.i: src/render/render.cpp.i
+
+.PHONY : src/render/render.i
+
+# target to preprocess a source file
+src/render/render.cpp.i:
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/render/render.cpp.i
+.PHONY : src/render/render.cpp.i
+
+src/render/render.s: src/render/render.cpp.s
+
+.PHONY : src/render/render.s
+
+# target to generate assembly for a file
+src/render/render.cpp.s:
+	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/render/render.cpp.s
+.PHONY : src/render/render.cpp.s
 
 # Help Target
 help:
@@ -183,13 +211,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... SensorFusion"
-	@echo "... edit_cache"
 	@echo "... environment"
-	@echo "... quizRansac"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... edit_cache"
+	@echo "... src/environment.o"
+	@echo "... src/environment.i"
+	@echo "... src/environment.s"
+	@echo "... src/processPointClouds.o"
+	@echo "... src/processPointClouds.i"
+	@echo "... src/processPointClouds.s"
+	@echo "... src/render/render.o"
+	@echo "... src/render/render.i"
+	@echo "... src/render/render.s"
 .PHONY : help
 
 
