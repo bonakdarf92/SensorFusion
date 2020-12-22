@@ -97,6 +97,116 @@ clean: CMakeFiles/environment.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory src/quiz/ransac
+
+# Convenience name for "all" pass in the directory.
+src/quiz/ransac/all: src/quiz/ransac/CMakeFiles/quizRansac.dir/all
+
+.PHONY : src/quiz/ransac/all
+
+# Convenience name for "clean" pass in the directory.
+src/quiz/ransac/clean: src/quiz/ransac/CMakeFiles/quizRansac.dir/clean
+
+.PHONY : src/quiz/ransac/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/quiz/ransac/preinstall:
+
+.PHONY : src/quiz/ransac/preinstall
+
+#=============================================================================
+# Target rules for target src/quiz/ransac/CMakeFiles/quizRansac.dir
+
+# All Build rule for target.
+src/quiz/ransac/CMakeFiles/quizRansac.dir/all:
+	$(MAKE) -f src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make src/quiz/ransac/CMakeFiles/quizRansac.dir/depend
+	$(MAKE) -f src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make src/quiz/ransac/CMakeFiles/quizRansac.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles --progress-num=8,9,10 "Built target quizRansac"
+.PHONY : src/quiz/ransac/CMakeFiles/quizRansac.dir/all
+
+# Include target in all.
+all: src/quiz/ransac/CMakeFiles/quizRansac.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/quiz/ransac/CMakeFiles/quizRansac.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/quiz/ransac/CMakeFiles/quizRansac.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles 0
+.PHONY : src/quiz/ransac/CMakeFiles/quizRansac.dir/rule
+
+# Convenience name for target.
+quizRansac: src/quiz/ransac/CMakeFiles/quizRansac.dir/rule
+
+.PHONY : quizRansac
+
+# clean rule for target.
+src/quiz/ransac/CMakeFiles/quizRansac.dir/clean:
+	$(MAKE) -f src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make src/quiz/ransac/CMakeFiles/quizRansac.dir/clean
+.PHONY : src/quiz/ransac/CMakeFiles/quizRansac.dir/clean
+
+# clean rule for target.
+clean: src/quiz/ransac/CMakeFiles/quizRansac.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/quiz/cluster
+
+# Convenience name for "all" pass in the directory.
+src/quiz/cluster/all: src/quiz/cluster/CMakeFiles/quizCluster.dir/all
+
+.PHONY : src/quiz/cluster/all
+
+# Convenience name for "clean" pass in the directory.
+src/quiz/cluster/clean: src/quiz/cluster/CMakeFiles/quizCluster.dir/clean
+
+.PHONY : src/quiz/cluster/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/quiz/cluster/preinstall:
+
+.PHONY : src/quiz/cluster/preinstall
+
+#=============================================================================
+# Target rules for target src/quiz/cluster/CMakeFiles/quizCluster.dir
+
+# All Build rule for target.
+src/quiz/cluster/CMakeFiles/quizCluster.dir/all:
+	$(MAKE) -f src/quiz/cluster/CMakeFiles/quizCluster.dir/build.make src/quiz/cluster/CMakeFiles/quizCluster.dir/depend
+	$(MAKE) -f src/quiz/cluster/CMakeFiles/quizCluster.dir/build.make src/quiz/cluster/CMakeFiles/quizCluster.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles --progress-num=5,6,7 "Built target quizCluster"
+.PHONY : src/quiz/cluster/CMakeFiles/quizCluster.dir/all
+
+# Include target in all.
+all: src/quiz/cluster/CMakeFiles/quizCluster.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/quiz/cluster/CMakeFiles/quizCluster.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 src/quiz/cluster/CMakeFiles/quizCluster.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles 0
+.PHONY : src/quiz/cluster/CMakeFiles/quizCluster.dir/rule
+
+# Convenience name for target.
+quizCluster: src/quiz/cluster/CMakeFiles/quizCluster.dir/rule
+
+.PHONY : quizCluster
+
+# clean rule for target.
+src/quiz/cluster/CMakeFiles/quizCluster.dir/clean:
+	$(MAKE) -f src/quiz/cluster/CMakeFiles/quizCluster.dir/build.make src/quiz/cluster/CMakeFiles/quizCluster.dir/clean
+.PHONY : src/quiz/cluster/CMakeFiles/quizCluster.dir/clean
+
+# clean rule for target.
+clean: src/quiz/cluster/CMakeFiles/quizCluster.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

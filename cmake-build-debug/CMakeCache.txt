@@ -555,10 +555,10 @@ SensorFusion_SOURCE_DIR:STATIC=/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusi
 VTK_DIR:PATH=/usr/lib/cmake/vtk-6.3
 
 //Value Computed by CMake
-playback_BINARY_DIR:STATIC=/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug
+playback_BINARY_DIR:STATIC=/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster
 
 //Value Computed by CMake
-playback_SOURCE_DIR:STATIC=/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion
+playback_SOURCE_DIR:STATIC=/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/cluster
 
 
 ########################
@@ -717,7 +717,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

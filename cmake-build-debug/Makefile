@@ -123,6 +123,32 @@ environment/fast:
 	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/build
 .PHONY : environment/fast
 
+#=============================================================================
+# Target rules for targets named quizRansac
+
+# Build rule for target.
+quizRansac: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quizRansac
+.PHONY : quizRansac
+
+# fast build rule for target.
+quizRansac/fast:
+	$(MAKE) -f src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make src/quiz/ransac/CMakeFiles/quizRansac.dir/build
+.PHONY : quizRansac/fast
+
+#=============================================================================
+# Target rules for targets named quizCluster
+
+# Build rule for target.
+quizCluster: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quizCluster
+.PHONY : quizCluster
+
+# fast build rule for target.
+quizCluster/fast:
+	$(MAKE) -f src/quiz/cluster/CMakeFiles/quizCluster.dir/build.make src/quiz/cluster/CMakeFiles/quizCluster.dir/build
+.PHONY : quizCluster/fast
+
 src/environment.o: src/environment.cpp.o
 
 .PHONY : src/environment.o
@@ -213,6 +239,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... environment"
 	@echo "... edit_cache"
+	@echo "... quizRansac"
+	@echo "... quizCluster"
 	@echo "... src/environment.o"
 	@echo "... src/environment.i"
 	@echo "... src/environment.s"

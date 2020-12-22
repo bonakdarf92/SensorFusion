@@ -75,13 +75,34 @@ void render2DTree(Node* node, pcl::visualization::PCLVisualizer::Ptr& viewer, Bo
 
 }
 
+void clusterHelper(int index, const std::vector<std::vector<float>> points, std::vector<int> & clusters, std::vector<bool> & processedPoints, KdTree * tree, float distanceTool) {
+    processedPoints[index] = true;
+    clusters.push_back(index);
+    std::vector<int> nearest = tree->search(points[index], distanceTool);
+    for(int ids: nearest) {
+        if(!processedPoints[ids])
+            clusterHelper(ids, points, clusters, processedPoints, tree, distanceTool);
+    }
+}
+
 std::vector<std::vector<int>> euclideanCluster(const std::vector<std::vector<float>>& points, KdTree* tree, float distanceTol)
 {
 
-	// TODO: Fill out this function to return list of indices for each cluster
-
+	// Fill out this function to return list of indices for each cluster
 	std::vector<std::vector<int>> clusters;
- 
+    std::vector<bool> processedPoints(points.size(), false);
+    int k = 0;
+    while(k < points.size()) {
+        if (processedPoints[k]) {
+            k++;
+            continue;
+        }
+        std::vector<int> cluster;
+        clusterHelper(k, points, cluster,processedPoints, tree, distanceTol);
+        clusters.push_back(cluster);
+        k++;
+    }
+
 	return clusters;
 
 }
@@ -89,6 +110,7 @@ std::vector<std::vector<int>> euclideanCluster(const std::vector<std::vector<flo
 int main ()
 {
 
+    setenv("DISPLAY", "127.0.0.1:0", true);
 	// Create viewer
 	Box window;
   	window.x_min = -10;
