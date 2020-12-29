@@ -3,6 +3,7 @@
 
 #include "../../render/render.h"
 #include <unordered_set>
+#include "ransac.h"
 #include "../../processPointClouds.h"
 // using templates for processPointClouds so also include .cpp to help linker
 #include "../../processPointClouds.cpp"
@@ -47,19 +48,20 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr CreateData()
 pcl::PointCloud<pcl::PointXYZ>::Ptr CreateData3D()
 {
 	ProcessPointClouds<pcl::PointXYZ> pointProcessor;
-	return pointProcessor.loadPcd("../../../../../SFND_Lidar_Obstacle_Detection/src/sensors/data/pcd/simpleHighway.pcd");
+	return pointProcessor.loadPcd("../../../../src/sensors/data/pcd/simpleHighway.pcd");
 }
 
 
 pcl::visualization::PCLVisualizer::Ptr initScene()
 {
-	pcl::visualization::PCLVisualizer::Ptr viewer(new pcl::visualization::PCLVisualizer ("2D Viewer"));
+	pcl::visualization::PCLVisualizer::Ptr viewer(new pcl::visualization::PCLVisualizer ("3D Viewer"));
 	viewer->setBackgroundColor (0, 0, 0);
   	viewer->initCameraParameters();
   	viewer->setCameraPosition(0, 0, 15, 0, 1, 0);
   	viewer->addCoordinateSystem (1.0);
   	return viewer;
 }
+
 
 std::unordered_set<int> Ransac(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, int maxIterations, float distanceTol)
 {
@@ -165,7 +167,7 @@ std::unordered_set<int> RansacPlane(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, i
 
 int main ()
 {
-    setenv("DISPLAY", "127.0.0.1:0", true);
+    //setenv("DISPLAY", "127.0.0.1:0", true);
     // Create viewer
 	pcl::visualization::PCLVisualizer::Ptr viewer = initScene();
 
@@ -175,10 +177,8 @@ int main ()
 	// Create 3D data
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud2 = CreateData3D();
 
-	
-
-	// TODO: Change the max iteration and distance tolerance arguments for Ransac function
-	std::unordered_set<int> inliers = Ransac(cloud, 1000, 1.2);
+	// Change the max iteration and distance tolerance arguments for Ransac function
+	//std::unordered_set<int> inliers = Ransac(cloud, 1000, 1.2);
 
 	std::unordered_set<int> inliersPlane = RansacPlane(cloud2, 1000, 0.2);
 	pcl::PointCloud<pcl::PointXYZ>::Ptr  cloudInliers(new pcl::PointCloud<pcl::PointXYZ>());
@@ -192,17 +192,17 @@ int main ()
 		else
 			cloudOutliers->points.push_back(point);
 	}
-
-//	renderPointCloud(viewer, cloud2,"PointCloud",Color(1,1,1));
-//    while (!viewer->wasStopped())
-//    {
-//        viewer->spinOnce();
-//    }
-//
+/*
+	renderPointCloud(viewer, cloud2,"PointCloud",Color(1,1,1));
+    while (!viewer->wasStopped())
+    {
+        viewer->spinOnce();
+    }
+*/
 	// Render 2D point cloud with inliers and outliers
-	if(inliers.size())
+	if(inliersPlane.size())
 	{
-		renderPointCloud(viewer,cloudInliers,"inliers",Color(0,1,0));
+		renderPointCloud(viewer,cloudInliers,"Plane",Color(0,1,0));
   		renderPointCloud(viewer,cloudOutliers,"outliers",Color(1,0,0));
 	}
   	else

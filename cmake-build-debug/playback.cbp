@@ -289,11 +289,26 @@
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/processPointClouds.cpp">
 			<Option target="environment"/>
+			<Option target="quizCluster"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/processPointClouds.h">
 			<Option target="environment"/>
+			<Option target="quizCluster"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/cluster/cluster.cpp">
+			<Option target="environment"/>
+			<Option target="quizCluster"/>
+		</Unit>
+		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/cluster/kdtree.h">
+			<Option target="environment"/>
+		</Unit>
+		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/ransac/ransac.cpp">
+			<Option target="environment"/>
+			<Option target="quizCluster"/>
+		</Unit>
+		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/ransac/ransac.h">
+			<Option target="environment"/>
+			<Option target="quizRansac"/>
 			<Option target="quizCluster"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/ransac/ransac2d.cpp">
@@ -305,9 +320,7 @@
 			<Option target="quizCluster"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/render/render.h">
-			<Option target="environment"/>
 			<Option target="quizRansac"/>
-			<Option target="quizCluster"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
@@ -405,16 +418,10 @@
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
@@ -432,25 +439,13 @@
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QMngPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QTsLibPlugin.cmake">
@@ -460,24 +455,6 @@
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandEglPlatformIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeEglPlatformIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QWaylandXCompositeGlxPlatformIntegrationPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\Qt5Gui\"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/../../../../usr/lib64/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
