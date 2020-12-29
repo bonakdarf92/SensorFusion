@@ -8,6 +8,7 @@
 #include "quiz/ransac/ransac.h"
 // using templates for processPointClouds so also include .cpp to help linker
 #include "processPointClouds.cpp"
+#include "quiz/cluster/kdtree.h"
 
 std::vector<Car> initHighway(bool renderScene, pcl::visualization::PCLVisualizer::Ptr& viewer)
 {
@@ -39,7 +40,6 @@ std::vector<Car> initHighway(bool renderScene, pcl::visualization::PCLVisualizer
 }
 
 void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointClouds<pcl::PointXYZI>* pointProcessorI, pcl::PointCloud<pcl::PointXYZI>::Ptr inputCloud)
-//void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer)
 {
     // ----------------------------------------------------
     // -----Open 3D viewer and display City Block     -----
@@ -67,8 +67,8 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointCloud
 
     renderPointCloud(viewer, cloudInliers, "plane", Color(0,0,1));
     renderPointCloud(viewer, cloudOutliers, "obst", Color(1,0,0));
+    /*
     std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr> cloudClusters = pointProcessorI->Clustering(cloudOutliers,0.53,30,300);
-
     int cloudId = 0;
     std::vector<Color> colors = {Color(0.5,0.5,0), Color(0.4,0.9,0.1), Color(0.33,0.7,1),Color(0.65,0.76,0.21)};
     for (pcl::PointCloud<pcl::PointXYZI>::Ptr cluster : cloudClusters) {
@@ -79,6 +79,37 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointCloud
         renderBox(viewer,box,cloudId);
         ++cloudId;
     }
+    */
+
+    KdTree* tree = new KdTree;
+    //for (int i=0; i<points.size(); i++)
+    //	tree->insert(points[i],i);
+    for (int i=0; i<cloudOutliers->size(); i++)
+        tree->insert(cloudOutliers->points[i],i);
+    // Time segmentation process
+    auto startTime = std::chrono::steady_clock::now();
+    //
+    std::vector<std::vector<int>> clusters = euclideanCluster(cloudOutliers, tree, 0.5);
+    //
+    auto endTime = std::chrono::steady_clock::now();
+    auto elapsedTime = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
+    std::cout << "clustering found " << clusters.size() << " and took " << elapsedTime.count() << " milliseconds" << std::endl;
+
+    // Render clusters
+    int clusterId = 0;
+    std::vector<Color> colors = {Color(0.5,0.5,1), Color(0,1,0), Color(0,0,1)};
+    for(std::vector<int> cluster : clusters)
+    {
+        pcl::PointCloud<pcl::PointXYZI>::Ptr clusterCloud(new pcl::PointCloud<pcl::PointXYZI>());
+        for(int indice: cluster)
+            clusterCloud->points.push_back(pcl::PointXYZI(cloudOutliers->points.at(indice).x, cloudOutliers->points.at(indice).y, cloudOutliers->points.at(indice).z, cloudOutliers->points.at(indice).intensity));
+        //clusterCloud->points.push_back(pcl::PointXYZ(points[indice][0],points[indice][1],points[indice][2]));
+        renderPointCloud(viewer, clusterCloud,"cluster"+std::to_string(clusterId),colors[clusterId%3]);
+        Box box =  boundingBox(clusterCloud);
+        renderBox(viewer,box, clusterId);
+        ++clusterId;
+    }
+
 
     //renderPointCloud(viewer,cloudClusters,"Cloud clusterd");
 }

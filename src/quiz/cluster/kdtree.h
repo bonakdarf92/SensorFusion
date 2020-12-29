@@ -2,6 +2,8 @@
 // Quiz on implementing kd tree
 
 #include "../../render/render.h"
+#include "pcl/recognition/linemod/line_rgbd.h"
+#include "../../render/box.h"
 
 
 // Structure to represent node of kd tree
@@ -133,5 +135,8 @@ struct KdTree
 };
 
 
+std::vector<std::vector<int>> euclideanCluster(pcl::PointCloud<pcl::PointXYZI>::Ptr points, KdTree* tree, float distanceTol);
+
+Box boundingBox(pcl::PointCloud<pcl::PointXYZI>::Ptr cluster);
 
 

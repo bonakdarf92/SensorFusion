@@ -108,6 +108,25 @@ std::vector<std::vector<int>> euclideanCluster(pcl::PointCloud<pcl::PointXYZI>::
     return clusters;
 }
 
+Box boundingBox(pcl::PointCloud<pcl::PointXYZI>::Ptr cluster)
+{
+
+    // Find bounding box for one of the clusters
+    pcl::PointXYZI minPoint, maxPoint;
+    pcl::getMinMax3D(*cluster, minPoint, maxPoint);
+
+    Box box;
+    box.x_min = minPoint.x;
+    box.y_min = minPoint.y;
+    box.z_min = minPoint.z;
+    box.x_max = maxPoint.x;
+    box.y_max = maxPoint.y;
+    box.z_max = maxPoint.z;
+
+    return box;
+}
+
+/*
 int main ()
 {
 
@@ -172,6 +191,8 @@ int main ()
   		    clusterCloud->points.push_back(pcl::PointXYZ(cloudOutliers->points.at(indice).x, cloudOutliers->points.at(indice).y, cloudOutliers->points.at(indice).z));
   			//clusterCloud->points.push_back(pcl::PointXYZ(points[indice][0],points[indice][1],points[indice][2]));
   		renderPointCloud(viewer, clusterCloud,"cluster"+std::to_string(clusterId),colors[clusterId%3]);
+        Box box =  boundingBox(clusterCloud);
+        renderBox(viewer,box, clusterId);
   		++clusterId;
   	}
   	if(clusters.size()==0)
@@ -185,3 +206,4 @@ int main ()
   	}
   	
 }
+*/

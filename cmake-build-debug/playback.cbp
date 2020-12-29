@@ -296,7 +296,11 @@
 			<Option target="quizCluster"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/cluster/cluster.cpp">
+			<Option target="environment"/>
 			<Option target="quizCluster"/>
+		</Unit>
+		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/cluster/kdtree.h">
+			<Option target="environment"/>
 		</Unit>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/ransac/ransac.cpp">
 			<Option target="environment"/>
