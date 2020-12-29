@@ -101,9 +101,18 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointCloud
     for(std::vector<int> cluster : clusters)
     {
         pcl::PointCloud<pcl::PointXYZI>::Ptr clusterCloud(new pcl::PointCloud<pcl::PointXYZI>());
-        for(int indice: cluster)
-            clusterCloud->points.push_back(pcl::PointXYZI(cloudOutliers->points.at(indice).x, cloudOutliers->points.at(indice).y, cloudOutliers->points.at(indice).z, cloudOutliers->points.at(indice).intensity));
-        //clusterCloud->points.push_back(pcl::PointXYZ(points[indice][0],points[indice][1],points[indice][2]));
+        for(int indice: cluster) {
+            pcl::PointXYZI CPoint;
+            CPoint.x = cloudOutliers->points.at(indice).x;
+            CPoint.y = cloudOutliers->points.at(indice).y;
+            CPoint.z = cloudOutliers->points.at(indice).z;
+            CPoint.intensity = cloudOutliers->points.at(indice).intensity;
+            clusterCloud->points.push_back(CPoint);
+            //clusterCloud->points.push_back(
+            //        pcl::PointXYZI(cloudOutliers->points.at(indice).x, cloudOutliers->points.at(indice).y,
+            //                       cloudOutliers->points.at(indice).z, cloudOutliers->points.at(indice).intensity));
+        }
+            //clusterCloud->points.push_back(pcl::PointXYZ(points[indice][0],points[indice][1],points[indice][2]));
         renderPointCloud(viewer, clusterCloud,"cluster"+std::to_string(clusterId),colors[clusterId%3]);
         Box box =  boundingBox(clusterCloud);
         renderBox(viewer,box, clusterId);
@@ -183,7 +192,7 @@ void initCamera(CameraAngle setAngle, pcl::visualization::PCLVisualizer::Ptr& vi
 
 int main (int argc, char** argv)
 {
-    //setenv("DISPLAY", "127.0.0.1:0", true);
+    setenv("DISPLAY", "127.0.0.1:0", true);
     std::cout << "starting enviroment" << std::endl;
 
     pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));

@@ -6,7 +6,7 @@
 #include <chrono>
 #include <string>
 #include "kdtree.h"
-#include "../ransac/ransac.h"
+//#include "../ransac/ransac.h"
 
 // Arguments:
 // window is the region to draw box around
@@ -130,7 +130,7 @@ Box boundingBox(pcl::PointCloud<pcl::PointXYZI>::Ptr cluster)
 int main ()
 {
 
-    //setenv("DISPLAY", "127.0.0.1:0", true);
+    setenv("DISPLAY", "127.0.0.1:0", true);
 	// Create viewer
 	Box window;
   	window.x_min = -10;
@@ -191,8 +191,8 @@ int main ()
   		    clusterCloud->points.push_back(pcl::PointXYZ(cloudOutliers->points.at(indice).x, cloudOutliers->points.at(indice).y, cloudOutliers->points.at(indice).z));
   			//clusterCloud->points.push_back(pcl::PointXYZ(points[indice][0],points[indice][1],points[indice][2]));
   		renderPointCloud(viewer, clusterCloud,"cluster"+std::to_string(clusterId),colors[clusterId%3]);
-        Box box =  boundingBox(clusterCloud);
-        renderBox(viewer,box, clusterId);
+        //Box box =  boundingBox(clusterCloud);
+        //renderBox(viewer,box, clusterId);
   		++clusterId;
   	}
   	if(clusters.size()==0)

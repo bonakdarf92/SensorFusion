@@ -1,4 +1,4 @@
-# Install script for directory: /home/faridb/CLionProjects/SensorFusion
+# Install script for directory: /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,19 +29,12 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/cmake_install.cmake")
-  include("/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/cmake_install.cmake")
-
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -52,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
