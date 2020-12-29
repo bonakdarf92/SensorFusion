@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/faridb/CLionProjects/SensorFusion/src/environment.cpp" "/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir/src/environment.cpp.o"
   "/home/faridb/CLionProjects/SensorFusion/src/processPointClouds.cpp" "/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir/src/processPointClouds.cpp.o"
+  "/home/faridb/CLionProjects/SensorFusion/src/quiz/ransac/ransac.cpp" "/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir/src/quiz/ransac/ransac.cpp.o"
   "/home/faridb/CLionProjects/SensorFusion/src/render/render.cpp" "/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir/src/render/render.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -13,6 +13,8 @@ render/render.h
 /home/faridb/CLionProjects/SensorFusion/src/render/render.h
 processPointClouds.h
 /home/faridb/CLionProjects/SensorFusion/src/processPointClouds.h
+quiz/ransac/ransac.h
+/home/faridb/CLionProjects/SensorFusion/src/quiz/ransac/ransac.h
 processPointClouds.cpp
 /home/faridb/CLionProjects/SensorFusion/src/processPointClouds.cpp
 
@@ -51,6 +53,20 @@ chrono
 -
 render/box.h
 /home/faridb/CLionProjects/SensorFusion/src/render/box.h
+
+/home/faridb/CLionProjects/SensorFusion/src/quiz/ransac/ransac.cpp
+ransac.h
+/home/faridb/CLionProjects/SensorFusion/src/quiz/ransac/ransac.h
+
+/home/faridb/CLionProjects/SensorFusion/src/quiz/ransac/ransac.h
+../../processPointClouds.h
+/home/faridb/CLionProjects/SensorFusion/src/processPointClouds.h
+../../render/render.h
+/home/faridb/CLionProjects/SensorFusion/src/render/render.h
+../../render/box.h
+/home/faridb/CLionProjects/SensorFusion/src/render/box.h
+unordered_set
+-
 
 /home/faridb/CLionProjects/SensorFusion/src/render/box.h
 Eigen/Geometry

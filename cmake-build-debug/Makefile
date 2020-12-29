@@ -223,6 +223,33 @@ src/processPointClouds.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.s
 .PHONY : src/processPointClouds.cpp.s
 
+src/quiz/ransac/ransac.o: src/quiz/ransac/ransac.cpp.o
+
+.PHONY : src/quiz/ransac/ransac.o
+
+# target to build an object file
+src/quiz/ransac/ransac.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/ransac/ransac.cpp.o
+.PHONY : src/quiz/ransac/ransac.cpp.o
+
+src/quiz/ransac/ransac.i: src/quiz/ransac/ransac.cpp.i
+
+.PHONY : src/quiz/ransac/ransac.i
+
+# target to preprocess a source file
+src/quiz/ransac/ransac.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/ransac/ransac.cpp.i
+.PHONY : src/quiz/ransac/ransac.cpp.i
+
+src/quiz/ransac/ransac.s: src/quiz/ransac/ransac.cpp.s
+
+.PHONY : src/quiz/ransac/ransac.s
+
+# target to generate assembly for a file
+src/quiz/ransac/ransac.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/ransac/ransac.cpp.s
+.PHONY : src/quiz/ransac/ransac.cpp.s
+
 src/render/render.o: src/render/render.cpp.o
 
 .PHONY : src/render/render.o
@@ -267,6 +294,9 @@ help:
 	@echo "... src/processPointClouds.o"
 	@echo "... src/processPointClouds.i"
 	@echo "... src/processPointClouds.s"
+	@echo "... src/quiz/ransac/ransac.o"
+	@echo "... src/quiz/ransac/ransac.i"
+	@echo "... src/quiz/ransac/ransac.s"
 	@echo "... src/render/render.o"
 	@echo "... src/render/render.i"
 	@echo "... src/render/render.s"

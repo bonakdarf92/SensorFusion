@@ -5,6 +5,7 @@
 #include "sensors/lidar.h"
 #include "render/render.h"
 #include "processPointClouds.h"
+#include "quiz/ransac/ransac.h"
 // using templates for processPointClouds so also include .cpp to help linker
 #include "processPointClouds.cpp"
 
@@ -47,15 +48,29 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointCloud
     //ProcessPointClouds<pcl::PointXYZI> pointProcessorI;
     //pcl::PointCloud<pcl::PointXYZI>::Ptr inputCloud = pointProcessorI.loadPcd("../src/sensors/data/pcd/data_1/0000000000.pcd");
     //inputCloud = pointProcessorI->FilterCloud(inputCloud, 0.3, Eigen::Vector4f(-10,-5,-2,1), Eigen::Vector4f(30,8,1,1));
-    inputCloud = pointProcessorI->FilterCloud(inputCloud, 0.1, Eigen::Vector4f(-10,-10,-2,1), Eigen::Vector4f(40,10,2, 1));
-    std::pair<pcl::PointCloud<pcl::PointXYZI>::Ptr, pcl::PointCloud<pcl::PointXYZI>::Ptr> segmentCloud = pointProcessorI->SegmentPlane(inputCloud, 50, 0.25);
+    inputCloud = pointProcessorI->FilterCloud(inputCloud, 0.3, Eigen::Vector4f(-10,-10,-2,1), Eigen::Vector4f(40,10,2, 1));
+    //std::pair<pcl::PointCloud<pcl::PointXYZI>::Ptr, pcl::PointCloud<pcl::PointXYZI>::Ptr> segmentCloud = pointProcessorI->SegmentPlane(inputCloud, 50, 0.25);
+    std::unordered_set<int> inliersPlane;
+    inliersPlane =  RansacPlane3d(inputCloud, 50, 0.25);
     //renderPointCloud(viewer, segmentCloud.first," obstCloud",Color(1,0,0));
-    renderPointCloud(viewer, segmentCloud.second, "plane", Color(0,0,1));
+    pcl::PointCloud<pcl::PointXYZI>::Ptr  cloudInliers(new pcl::PointCloud<pcl::PointXYZI>());
+    pcl::PointCloud<pcl::PointXYZI>::Ptr cloudOutliers(new pcl::PointCloud<pcl::PointXYZI>());
 
-    std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr> cloudClusters = pointProcessorI->Clustering(segmentCloud.first,0.53,45,500);
+    for(int index = 0; index < inputCloud->points.size(); index++)
+    {
+        pcl::PointXYZI point = inputCloud->points[index];
+        if(inliersPlane.count(index))
+            cloudInliers->points.push_back(point);
+        else
+            cloudOutliers->points.push_back(point);
+    }
+
+    renderPointCloud(viewer, cloudInliers, "plane", Color(0,0,1));
+    renderPointCloud(viewer, cloudOutliers, "obst", Color(1,0,0));
+    std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr> cloudClusters = pointProcessorI->Clustering(cloudOutliers,0.53,30,300);
 
     int cloudId = 0;
-    std::vector<Color> colors = {Color(1,0,0), Color(0,1,0), Color(0,0,1),Color(0,1,1)};
+    std::vector<Color> colors = {Color(0.5,0.5,0), Color(0.4,0.9,0.1), Color(0.33,0.7,1),Color(0.65,0.76,0.21)};
     for (pcl::PointCloud<pcl::PointXYZI>::Ptr cluster : cloudClusters) {
         std::cout << "Cluster groeße" << std::endl;
         pointProcessorI->numPoints(cluster);
@@ -162,7 +177,7 @@ int main (int argc, char** argv)
         cityBlock(viewer, pointProcessorI, inputCloudI);
 
         streamIterator++;
-        usleep(50000);
+        //usleep(50000);
         if(streamIterator == stream.end())
             streamIterator = stream.begin();
 
