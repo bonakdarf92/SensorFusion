@@ -2,11 +2,10 @@
 // Quiz on implementing simple RANSAC line fitting
 
 #include "../../render/render.h"
-#include "../../render/box.h"
 #include <chrono>
 #include <string>
 #include "kdtree.h"
-//#include "../ransac/ransac.h"
+#include "../ransac/ransac.h"
 
 // Arguments:
 // window is the region to draw box around
@@ -108,12 +107,12 @@ std::vector<std::vector<int>> euclideanCluster(pcl::PointCloud<pcl::PointXYZI>::
     return clusters;
 }
 
-Box boundingBox(pcl::PointCloud<pcl::PointXYZI>::Ptr cluster)
+Box boundingBox(pcl::PointCloud<pcl::PointXYZI>::Ptr clusters)
 {
 
     // Find bounding box for one of the clusters
     pcl::PointXYZI minPoint, maxPoint;
-    pcl::getMinMax3D(*cluster, minPoint, maxPoint);
+    pcl::getMinMax3D(*clusters, minPoint, maxPoint);
 
     Box box;
     box.x_min = minPoint.x;
@@ -206,4 +205,5 @@ int main ()
   	}
   	
 }
-*/
+
+ */

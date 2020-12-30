@@ -1,3 +1,6 @@
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/CMakeFiles/quizRansac.dir
+/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/CMakeFiles/edit_cache.dir

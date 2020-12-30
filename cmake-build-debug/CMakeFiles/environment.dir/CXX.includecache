@@ -17,8 +17,8 @@ quiz/ransac/ransac.h
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/ransac/ransac.h
 processPointClouds.cpp
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/processPointClouds.cpp
-quiz/cluster/kdtree.h
-/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/cluster/kdtree.h
+quiz/cluster/cluster.cpp
+/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/cluster/cluster.cpp
 
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/processPointClouds.cpp
 processPointClouds.h
@@ -59,14 +59,14 @@ render/box.h
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/cluster/cluster.cpp
 ../../render/render.h
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/render/render.h
-../../render/box.h
-/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/render/box.h
 chrono
 -
 string
 -
 kdtree.h
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/cluster/kdtree.h
+../ransac/ransac.h
+/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/ransac/ransac.h
 
 /mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/cluster/kdtree.h
 ../../render/render.h

@@ -8,7 +8,8 @@
 #include "quiz/ransac/ransac.h"
 // using templates for processPointClouds so also include .cpp to help linker
 #include "processPointClouds.cpp"
-#include "quiz/cluster/kdtree.h"
+//#include "quiz/cluster/kdtree.h"
+#include "quiz/cluster/cluster.cpp"
 
 std::vector<Car> initHighway(bool renderScene, pcl::visualization::PCLVisualizer::Ptr& viewer)
 {
@@ -67,6 +68,7 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointCloud
 
     renderPointCloud(viewer, cloudInliers, "plane", Color(0,0,1));
     renderPointCloud(viewer, cloudOutliers, "obst", Color(1,0,0));
+
     /*
     std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr> cloudClusters = pointProcessorI->Clustering(cloudOutliers,0.53,30,300);
     int cloudId = 0;
@@ -95,6 +97,7 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointCloud
     auto elapsedTime = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
     std::cout << "clustering found " << clusters.size() << " and took " << elapsedTime.count() << " milliseconds" << std::endl;
 
+
     // Render clusters
     int clusterId = 0;
     std::vector<Color> colors = {Color(0.5,0.5,1), Color(0,1,0), Color(0,0,1)};
@@ -102,17 +105,8 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPointCloud
     {
         pcl::PointCloud<pcl::PointXYZI>::Ptr clusterCloud(new pcl::PointCloud<pcl::PointXYZI>());
         for(int indice: cluster) {
-            pcl::PointXYZI CPoint;
-            CPoint.x = cloudOutliers->points.at(indice).x;
-            CPoint.y = cloudOutliers->points.at(indice).y;
-            CPoint.z = cloudOutliers->points.at(indice).z;
-            CPoint.intensity = cloudOutliers->points.at(indice).intensity;
-            clusterCloud->points.push_back(CPoint);
-            //clusterCloud->points.push_back(
-            //        pcl::PointXYZI(cloudOutliers->points.at(indice).x, cloudOutliers->points.at(indice).y,
-            //                       cloudOutliers->points.at(indice).z, cloudOutliers->points.at(indice).intensity));
+            clusterCloud->points.push_back(cloudOutliers->points.at(indice));
         }
-            //clusterCloud->points.push_back(pcl::PointXYZ(points[indice][0],points[indice][1],points[indice][2]));
         renderPointCloud(viewer, clusterCloud,"cluster"+std::to_string(clusterId),colors[clusterId%3]);
         Box box =  boundingBox(clusterCloud);
         renderBox(viewer,box, clusterId);

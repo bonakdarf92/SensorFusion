@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
+  "../src/quiz/ransac/CMakeLists.txt"
   "/usr/lib/cmake/vtk-6.3/Modules/vtkChartsCore.cmake"
   "/usr/lib/cmake/vtk-6.3/Modules/vtkCommonColor.cmake"
   "/usr/lib/cmake/vtk-6.3/Modules/vtkCommonComputationalGeometry.cmake"
@@ -246,9 +247,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/quiz/ransac/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/environment.dir/DependInfo.cmake"
+  "src/quiz/ransac/CMakeFiles/quizRansac.dir/DependInfo.cmake"
   )

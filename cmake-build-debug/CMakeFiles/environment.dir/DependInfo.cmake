@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/environment.cpp" "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir/src/environment.cpp.o"
   "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/processPointClouds.cpp" "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir/src/processPointClouds.cpp.o"
-  "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/cluster/cluster.cpp" "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir/src/quiz/cluster/cluster.cpp.o"
   "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/quiz/ransac/ransac.cpp" "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir/src/quiz/ransac/ransac.cpp.o"
   "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/src/render/render.cpp" "/mnt/c/Users/FaridLenovo/CLionProjects/SensorFusion/cmake-build-debug/CMakeFiles/environment.dir/src/render/render.cpp.o"
   )
@@ -22,7 +21,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "DISABLE_PNG"
   "DISABLE_RSSDK"
   "FLANN_STATIC"
-  "PCL_NO_PRECOMPILE"
   "QT_CORE_LIB"
   "QT_GUI_LIB"
   "QT_WIDGETS_LIB"

@@ -123,6 +123,19 @@ environment/fast:
 	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/build
 .PHONY : environment/fast
 
+#=============================================================================
+# Target rules for targets named quizRansac
+
+# Build rule for target.
+quizRansac: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quizRansac
+.PHONY : quizRansac
+
+# fast build rule for target.
+quizRansac/fast:
+	$(MAKE) -f src/quiz/ransac/CMakeFiles/quizRansac.dir/build.make src/quiz/ransac/CMakeFiles/quizRansac.dir/build
+.PHONY : quizRansac/fast
+
 src/environment.o: src/environment.cpp.o
 
 .PHONY : src/environment.o
@@ -176,33 +189,6 @@ src/processPointClouds.s: src/processPointClouds.cpp.s
 src/processPointClouds.cpp.s:
 	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.s
 .PHONY : src/processPointClouds.cpp.s
-
-src/quiz/cluster/cluster.o: src/quiz/cluster/cluster.cpp.o
-
-.PHONY : src/quiz/cluster/cluster.o
-
-# target to build an object file
-src/quiz/cluster/cluster.cpp.o:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/cluster/cluster.cpp.o
-.PHONY : src/quiz/cluster/cluster.cpp.o
-
-src/quiz/cluster/cluster.i: src/quiz/cluster/cluster.cpp.i
-
-.PHONY : src/quiz/cluster/cluster.i
-
-# target to preprocess a source file
-src/quiz/cluster/cluster.cpp.i:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/cluster/cluster.cpp.i
-.PHONY : src/quiz/cluster/cluster.cpp.i
-
-src/quiz/cluster/cluster.s: src/quiz/cluster/cluster.cpp.s
-
-.PHONY : src/quiz/cluster/cluster.s
-
-# target to generate assembly for a file
-src/quiz/cluster/cluster.cpp.s:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/cluster/cluster.cpp.s
-.PHONY : src/quiz/cluster/cluster.cpp.s
 
 src/quiz/ransac/ransac.o: src/quiz/ransac/ransac.cpp.o
 
@@ -267,15 +253,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... environment"
 	@echo "... edit_cache"
+	@echo "... quizRansac"
 	@echo "... src/environment.o"
 	@echo "... src/environment.i"
 	@echo "... src/environment.s"
 	@echo "... src/processPointClouds.o"
 	@echo "... src/processPointClouds.i"
 	@echo "... src/processPointClouds.s"
-	@echo "... src/quiz/cluster/cluster.o"
-	@echo "... src/quiz/cluster/cluster.i"
-	@echo "... src/quiz/cluster/cluster.s"
 	@echo "... src/quiz/ransac/ransac.o"
 	@echo "... src/quiz/ransac/ransac.i"
 	@echo "... src/quiz/ransac/ransac.s"

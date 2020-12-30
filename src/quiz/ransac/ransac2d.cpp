@@ -44,13 +44,13 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr CreateData()
   	return cloud;
 
 }
-
+/*
 pcl::PointCloud<pcl::PointXYZ>::Ptr CreateData3D()
 {
 	ProcessPointClouds<pcl::PointXYZ> pointProcessor;
 	return pointProcessor.loadPcd("../../../../src/sensors/data/pcd/simpleHighway.pcd");
 }
-
+*/
 
 pcl::visualization::PCLVisualizer::Ptr initScene()
 {
@@ -163,11 +163,11 @@ std::unordered_set<int> RansacPlane(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud, i
 }
 
 
-
+/*
 
 int main ()
 {
-    //setenv("DISPLAY", "127.0.0.1:0", true);
+    setenv("DISPLAY", "127.0.0.1:0", true);
     // Create viewer
 	pcl::visualization::PCLVisualizer::Ptr viewer = initScene();
 
@@ -192,13 +192,13 @@ int main ()
 		else
 			cloudOutliers->points.push_back(point);
 	}
-/*
+
 	renderPointCloud(viewer, cloud2,"PointCloud",Color(1,1,1));
     while (!viewer->wasStopped())
     {
         viewer->spinOnce();
     }
-*/
+
 	// Render 2D point cloud with inliers and outliers
 	if(inliersPlane.size())
 	{
@@ -216,3 +216,4 @@ int main ()
   	}
   	
 }
+*/
