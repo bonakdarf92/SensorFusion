@@ -186,7 +186,7 @@ void initCamera(CameraAngle setAngle, pcl::visualization::PCLVisualizer::Ptr& vi
 
 int main (int argc, char** argv)
 {
-    setenv("DISPLAY", "127.0.0.1:0", true);
+    //setenv("DISPLAY", "127.0.0.1:0", true);
     std::cout << "starting enviroment" << std::endl;
 
     pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
