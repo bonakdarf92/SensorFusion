@@ -216,7 +216,6 @@
 					<Add option="-DDISABLE_PCAP"/>
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
-					<Add option="-DPCL_NO_PRECOMPILE"/>
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
@@ -259,7 +258,6 @@
 					<Add option="-DDISABLE_PCAP"/>
 					<Add option="-DDISABLE_PNG"/>
 					<Add option="-DDISABLE_LIBUSB_1_0"/>
-					<Add option="-DPCL_NO_PRECOMPILE"/>
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>

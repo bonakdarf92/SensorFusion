@@ -8,8 +8,8 @@
 #include "quiz/ransac/ransac.h"
 // using templates for processPointClouds so also include .cpp to help linker
 #include "processPointClouds.cpp"
-//#include "quiz/cluster/kdtree.h"
-#include "quiz/cluster/cluster.cpp"
+#include "quiz/cluster/kdtree.h"
+//#include "quiz/cluster/cluster.cpp"
 
 std::vector<Car> initHighway(bool renderScene, pcl::visualization::PCLVisualizer::Ptr& viewer)
 {

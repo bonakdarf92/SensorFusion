@@ -12,7 +12,7 @@ project(playback)
 find_package(PCL 1.8 REQUIRED)
 if (PCL_FOUND)
     message("blabla")
-    add_definitions(-DPCL_NO_PRECOMPILE)
+    #add_definitions(-DPCL_NO_PRECOMPILE)
 endif ()
 
 include_directories(${PCL_INCLUDE_DIRS})
