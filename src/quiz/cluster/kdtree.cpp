@@ -1,11 +1,11 @@
 /* \author Aaron Brown */
 // Quiz on implementing simple RANSAC line fitting
 
-#include "../../render/render.h"
+//#include "../../render/render.h"
 #include <chrono>
 #include <string>
 #include "kdtree.h"
-#include "../ransac/ransac.h"
+//#include "../ransac/ransac.h"
 
 // Arguments:
 // window is the region to draw box around

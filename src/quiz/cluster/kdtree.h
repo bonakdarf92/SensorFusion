@@ -4,6 +4,7 @@
 #include "../../render/render.h"
 #include "pcl/recognition/linemod/line_rgbd.h"
 #include "../../render/box.h"
+#include "../ransac/ransac.h"
 
 
 // Structure to represent node of kd tree

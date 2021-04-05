@@ -11,30 +11,30 @@
 				<Option working_dir="/home/faridb/CLionProjects/SensorFusion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/faridb/CLionProjects/SensorFusion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/faridb/CLionProjects/SensorFusion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="environment">
@@ -63,19 +63,12 @@
 					<Add directory="/usr/include/qt/QtGui"/>
 					<Add directory="/usr/include/qt/QtCore"/>
 					<Add directory="/usr/lib/qt/mkspecs/linux-g++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 environment"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 environment"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="environment/fast">
@@ -104,19 +97,12 @@
 					<Add directory="/usr/include/qt/QtGui"/>
 					<Add directory="/usr/include/qt/QtCore"/>
 					<Add directory="/usr/lib/qt/mkspecs/linux-g++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 environment/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 environment/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quizRansac">
@@ -135,7 +121,6 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
-					<Add directory="/usr/local"/>
 					<Add directory="/usr/include/vtk"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/freetype2"/>
@@ -146,19 +131,12 @@
 					<Add directory="/usr/include/qt/QtGui"/>
 					<Add directory="/usr/include/qt/QtCore"/>
 					<Add directory="/usr/lib/qt/mkspecs/linux-g++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 quizRansac"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 quizRansac"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quizRansac/fast">
@@ -177,7 +155,6 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
-					<Add directory="/usr/local"/>
 					<Add directory="/usr/include/vtk"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/freetype2"/>
@@ -188,19 +165,12 @@
 					<Add directory="/usr/include/qt/QtGui"/>
 					<Add directory="/usr/include/qt/QtCore"/>
 					<Add directory="/usr/lib/qt/mkspecs/linux-g++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 quizRansac/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 quizRansac/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/ransac/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quizCluster">
@@ -219,7 +189,6 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
-					<Add directory="/usr/local"/>
 					<Add directory="/usr/include/vtk"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/freetype2"/>
@@ -230,19 +199,12 @@
 					<Add directory="/usr/include/qt/QtGui"/>
 					<Add directory="/usr/include/qt/QtCore"/>
 					<Add directory="/usr/lib/qt/mkspecs/linux-g++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 quizCluster"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 quizCluster"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quizCluster/fast">
@@ -261,7 +223,6 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
-					<Add directory="/usr/local"/>
 					<Add directory="/usr/include/vtk"/>
 					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/freetype2"/>
@@ -272,34 +233,19 @@
 					<Add directory="/usr/include/qt/QtGui"/>
 					<Add directory="/usr/include/qt/QtCore"/>
 					<Add directory="/usr/lib/qt/mkspecs/linux-g++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 quizCluster/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 quizCluster/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/faridb/CLionProjects/SensorFusion/cmake-build-debug/src/quiz/cluster/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
 		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/environment.cpp">
 			<Option target="environment"/>
 		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/processPointClouds.cpp">
-			<Option target="environment"/>
-			<Option target="quizCluster"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/processPointClouds.h">
-			<Option target="environment"/>
-			<Option target="quizCluster"/>
-		</Unit>
-		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/cluster/cluster.cpp">
+		<Unit filename="/home/faridb/CLionProjects/SensorFusion/src/quiz/cluster/kdtree.cpp">
 			<Option target="environment"/>
 			<Option target="quizCluster"/>
 		</Unit>

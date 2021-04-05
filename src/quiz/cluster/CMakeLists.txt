@@ -21,7 +21,7 @@ add_definitions(${PCL_DEFINITIONS})
 list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
 
 
-add_executable (quizCluster kdtree.cpp ../../render/render.cpp ../ransac/ransac.h ../ransac/ransac.cpp ../../processPointClouds.cpp)
+add_executable (quizCluster kdtree.cpp ../../render/render.cpp ../ransac/ransac.h ../ransac/ransac.cpp )#../../processPointClouds.cpp)
 target_link_libraries (quizCluster ${PCL_LIBRARIES})
 
 

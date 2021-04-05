@@ -1,0 +1,9 @@
+/home/faridb/CLionProjects/SensorFusion/build/CMakeFiles/rebuild_cache.dir
+/home/faridb/CLionProjects/SensorFusion/build/CMakeFiles/edit_cache.dir
+/home/faridb/CLionProjects/SensorFusion/build/CMakeFiles/environment.dir
+/home/faridb/CLionProjects/SensorFusion/build/src/quiz/ransac/CMakeFiles/rebuild_cache.dir
+/home/faridb/CLionProjects/SensorFusion/build/src/quiz/ransac/CMakeFiles/edit_cache.dir
+/home/faridb/CLionProjects/SensorFusion/build/src/quiz/ransac/CMakeFiles/quizRansac.dir
+/home/faridb/CLionProjects/SensorFusion/build/src/quiz/cluster/CMakeFiles/rebuild_cache.dir
+/home/faridb/CLionProjects/SensorFusion/build/src/quiz/cluster/CMakeFiles/edit_cache.dir
+/home/faridb/CLionProjects/SensorFusion/build/src/quiz/cluster/CMakeFiles/quizCluster.dir

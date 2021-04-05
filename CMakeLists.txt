@@ -25,7 +25,7 @@ list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
 add_subdirectory(src/quiz/ransac)
 add_subdirectory(src/quiz/cluster)
 
-add_executable (environment src/environment.cpp src/render/render.cpp src/processPointClouds.cpp
+add_executable (environment src/environment.cpp src/render/render.cpp #src/processPointClouds.cpp
         src/quiz/ransac/ransac.h src/quiz/ransac/ransac.cpp src/quiz/cluster/kdtree.cpp src/quiz/cluster/kdtree.h)
 target_link_libraries (environment ${PCL_LIBRARIES})
 

@@ -196,59 +196,32 @@ src/environment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/environment.cpp.s
 .PHONY : src/environment.cpp.s
 
-src/processPointClouds.o: src/processPointClouds.cpp.o
+src/quiz/cluster/kdtree.o: src/quiz/cluster/kdtree.cpp.o
 
-.PHONY : src/processPointClouds.o
-
-# target to build an object file
-src/processPointClouds.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.o
-.PHONY : src/processPointClouds.cpp.o
-
-src/processPointClouds.i: src/processPointClouds.cpp.i
-
-.PHONY : src/processPointClouds.i
-
-# target to preprocess a source file
-src/processPointClouds.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.i
-.PHONY : src/processPointClouds.cpp.i
-
-src/processPointClouds.s: src/processPointClouds.cpp.s
-
-.PHONY : src/processPointClouds.s
-
-# target to generate assembly for a file
-src/processPointClouds.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.s
-.PHONY : src/processPointClouds.cpp.s
-
-src/quiz/cluster/cluster.o: src/quiz/cluster/cluster.cpp.o
-
-.PHONY : src/quiz/cluster/cluster.o
+.PHONY : src/quiz/cluster/kdtree.o
 
 # target to build an object file
-src/quiz/cluster/cluster.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/cluster/cluster.cpp.o
-.PHONY : src/quiz/cluster/cluster.cpp.o
+src/quiz/cluster/kdtree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/cluster/kdtree.cpp.o
+.PHONY : src/quiz/cluster/kdtree.cpp.o
 
-src/quiz/cluster/cluster.i: src/quiz/cluster/cluster.cpp.i
+src/quiz/cluster/kdtree.i: src/quiz/cluster/kdtree.cpp.i
 
-.PHONY : src/quiz/cluster/cluster.i
+.PHONY : src/quiz/cluster/kdtree.i
 
 # target to preprocess a source file
-src/quiz/cluster/cluster.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/cluster/cluster.cpp.i
-.PHONY : src/quiz/cluster/cluster.cpp.i
+src/quiz/cluster/kdtree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/cluster/kdtree.cpp.i
+.PHONY : src/quiz/cluster/kdtree.cpp.i
 
-src/quiz/cluster/cluster.s: src/quiz/cluster/cluster.cpp.s
+src/quiz/cluster/kdtree.s: src/quiz/cluster/kdtree.cpp.s
 
-.PHONY : src/quiz/cluster/cluster.s
+.PHONY : src/quiz/cluster/kdtree.s
 
 # target to generate assembly for a file
-src/quiz/cluster/cluster.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/cluster/cluster.cpp.s
-.PHONY : src/quiz/cluster/cluster.cpp.s
+src/quiz/cluster/kdtree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/quiz/cluster/kdtree.cpp.s
+.PHONY : src/quiz/cluster/kdtree.cpp.s
 
 src/quiz/ransac/ransac.o: src/quiz/ransac/ransac.cpp.o
 
@@ -318,12 +291,9 @@ help:
 	@echo "... src/environment.o"
 	@echo "... src/environment.i"
 	@echo "... src/environment.s"
-	@echo "... src/processPointClouds.o"
-	@echo "... src/processPointClouds.i"
-	@echo "... src/processPointClouds.s"
-	@echo "... src/quiz/cluster/cluster.o"
-	@echo "... src/quiz/cluster/cluster.i"
-	@echo "... src/quiz/cluster/cluster.s"
+	@echo "... src/quiz/cluster/kdtree.o"
+	@echo "... src/quiz/cluster/kdtree.i"
+	@echo "... src/quiz/cluster/kdtree.s"
 	@echo "... src/quiz/ransac/ransac.o"
 	@echo "... src/quiz/ransac/ransac.i"
 	@echo "... src/quiz/ransac/ransac.s"
