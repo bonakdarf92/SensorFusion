@@ -6,7 +6,9 @@ set(CXX_FLAGS "-Wall -Wno-dev")
 set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
 
 project(playback)
-
+set(CMAKE_INCLUDE_PATH /usr/local)
+include_directories(/usr/local)
+#find_package(Boost 1.72 REQUIRED)
 find_package(PCL 1.8 REQUIRED)
 if (PCL_FOUND)
     message("Blabla")

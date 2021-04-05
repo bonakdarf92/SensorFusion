@@ -4,10 +4,11 @@ add_definitions(-std=c++14)
 
 set(CXX_FLAGS "-Wall -Wno-dev")
 set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
-
+set(CMAKE_INCLUDE_PATH /usr/local)
+include_directories(/usr/local/include)
 project(playback)
-
-find_package(PCL 1.7 REQUIRED)
+#find_package(Boost 1.72.0 REQUIRED)
+find_package(PCL 1.8 REQUIRED)
 if (PCL_FOUND)
     message("Gefunden")
     #add_definitions(-DPCL_NO_PRECOMPILE)
@@ -18,16 +19,14 @@ endif ()
 
 include_directories(${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
+link_directories(/usr/local/lib)
 add_definitions(${PCL_DEFINITIONS})
 list(REMOVE_ITEM PCL_LIBRARIES "vtkproj4")
 add_subdirectory(src/quiz/ransac)
-#add_subdirectory(src/quiz/cluster)
+add_subdirectory(src/quiz/cluster)
 
 add_executable (environment src/environment.cpp src/render/render.cpp src/processPointClouds.cpp
-        src/quiz/ransac/ransac.h
-        src/quiz/ransac/ransac.cpp)
-        #src/quiz/cluster/cluster.cpp
-        #src/quiz/cluster/kdtree.h)
+        src/quiz/ransac/ransac.h src/quiz/ransac/ransac.cpp src/quiz/cluster/cluster.cpp src/quiz/cluster/kdtree.h)
 target_link_libraries (environment ${PCL_LIBRARIES})
 
 
