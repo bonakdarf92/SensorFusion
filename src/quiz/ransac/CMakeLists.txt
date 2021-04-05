@@ -5,7 +5,7 @@ add_definitions(-std=c++14)
 set(CXX_FLAGS "-Wall -Wno-dev")
 set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
 
-project(playback)
+project(playback3)
 set(CMAKE_INCLUDE_PATH /usr/local)
 include_directories(/usr/local)
 #find_package(Boost 1.72 REQUIRED)

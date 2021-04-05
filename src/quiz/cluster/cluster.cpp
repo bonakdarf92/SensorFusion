@@ -129,7 +129,7 @@ Box boundingBox(pcl::PointCloud<pcl::PointXYZI>::Ptr clusters)
 int main ()
 {
 
-    setenv("DISPLAY", "127.0.0.1:0", true);
+    //setenv("DISPLAY", "127.0.0.1:0", true);
 	// Create viewer
 	Box window;
   	window.x_min = -10;
@@ -206,4 +206,4 @@ int main ()
   	
 }
 
- */
+*/

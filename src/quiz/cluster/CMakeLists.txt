@@ -7,7 +7,7 @@ set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
 set(CMAKE_INCLUDE_PATH /usr/local)
 include_directories(/usr/local)
 
-project(playback)
+project(playback2)
 #find_package(Boost 1.72 REQUIRED)
 find_package(PCL 1.8 REQUIRED)
 if (PCL_FOUND)
